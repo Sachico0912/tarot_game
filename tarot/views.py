@@ -6,8 +6,12 @@ from .serializers import TarotCardSerializer
 import random
 
 @api_view(['GET'])
-def cards(request):
+def draw_cards(request):
     all_cards = list(TarotCard.objects.all())
+
+    if len(all_cards) < 3:
+        return Response({"error": "塔羅牌資料不足"}, status=400)
+
     drawn = random.sample(all_cards, 3)
     result = []
 
