@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import draw_cards
+from .views import draw_card
 
-app_name = 'tarot'
+app_name ='tarot'
 
 urlpatterns = [
-    path('draw_cards/', draw_cards, name='draw_cards'),
+    path('draw_card/', draw_card, name='raw_card'),
 ]
