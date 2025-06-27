@@ -29,8 +29,13 @@ ALLOWED_HOSTS = []
 
 import os
 
+from decouple import config
+GOOGLE_API_KEY = config("GOOGLE_API_KEY")
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+DEBUG = True
 
 # Application definition
 
