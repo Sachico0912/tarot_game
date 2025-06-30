@@ -1,3 +1,8 @@
+<template>
+  <button @click="handle_sign_in"
+  >登入</button>
+</template>
+
 <script setup>
 import { ref } from 'vue'
 
