@@ -1,5 +1,6 @@
 
 <template>
+  <div class=""> <LoginButton /></div>
   <div class="p-6">
     <h1 class="text-2xl font-bold mb-4">塔羅牌抽籤</h1>
     
@@ -34,6 +35,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import LoginButton from './components/LoginButton.vue'
 
 const card = ref(null)
 const aiExplanation = ref('') // 放 Gemini 回傳的文字
