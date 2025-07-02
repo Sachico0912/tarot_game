@@ -35,7 +35,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import LoginButton from './components/LoginButton.vue'
+
 
 const card = ref(null)
 const aiExplanation = ref('') // 放 Gemini 回傳的文字
